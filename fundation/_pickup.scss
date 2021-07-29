@@ -1,0 +1,89 @@
+#pickup {
+  width: 100%;
+
+
+  .p-inner{
+    max-width: 1560px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 20px;
+    box-sizing: border-box;
+
+  
+    .p-title{
+      display: block;
+      padding-bottom: 40px;
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+  
+       h1{
+        font-size: 32px;
+        padding-right: 25px;
+
+        @include MidTab{
+          font-size: 44px;
+        }
+    
+    
+       &>span{
+         display: inline-block;
+         border-top:2px solid black;
+         width:75px;
+         height: 0px;
+         vertical-align: middle;    
+         margin-right: 15px;
+         }
+        }
+  
+        p{
+          font-size: 16px;
+          padding-top:15px;
+
+          @include SmallTab{
+            padding-top:0px;
+          }
+
+          @include MidTab{
+            font-size: 22px;
+          }
+         
+       }
+    }//title
+
+    
+    .swiper-container, .slider2 {
+      //ここの高さはページネーションの位置調整のため 
+      box-sizing: border-box;
+      overflow: hidden!important;
+      width: 100%;
+      display: block;
+      padding-bottom: 38px;
+
+    
+    
+    
+     .swiper-slide>img{
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        width: 100%;
+
+      }
+
+      .swiper-pagination-bullet {
+        background: #000; 
+        //デフォルトでかなり低い値
+        opacity: 0.9;
+        border-radius:0px ;
+       
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #ffd700; /* 色：黄色 */
+      }
+    }//.swiper-container, .slider2 
+
+    
+  }//inner
+}//section
+  

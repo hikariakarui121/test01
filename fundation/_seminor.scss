@@ -1,0 +1,93 @@
+
+#seminor{
+  background-color: #FCC800;
+  width:100%;
+
+  .s__item{
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 1560px;
+    width: 100%;
+    margin: 0 auto;
+    padding:0px 20px 75px ;
+    box-sizing: border-box;
+    text-align: center;
+
+    @include SmallTab{
+      text-align: left;
+    }
+    
+
+    .s-title{
+
+      display: flex;
+      align-items: center;
+      flex-wrap:  wrap;
+    
+        h1{
+          font-size: 32px;
+          display: inline-block;
+          padding-bottom: 15px;
+          
+      
+
+          @include MidTab{
+            font-size: 45px;
+          }
+          
+          &>span{
+            border-top:2px solid black;
+            width:75px;
+            height: 0px;
+            display: inline-block;
+            vertical-align: middle!important;
+            margin-right: 15px;
+            }
+          }
+    
+          .semi-text{
+
+            a{
+              font-size: 12px;
+              display: inline-block;
+              margin-left: 15px;
+              background-color: #000;
+              color:white;
+              padding:3px 10px;
+              border-radius: 50px;
+              display: block;
+              text-decoration: none;
+
+
+              &:hover{
+                background-color: $white;
+                color:$black;
+              }
+            }
+
+         
+          // margin-top:15px;
+
+          @include MidTab{
+            font-size: 22px;
+            padding:3px 25px;
+            margin-left: 30px;
+            // margin-top:0px;
+          }
+
+        
+          }
+     }//s-title
+
+
+
+        p{
+          padding-top:30px;
+
+          @include SmallTab{
+           
+          }
+        }
+
+  }//s-item
+}//seminor

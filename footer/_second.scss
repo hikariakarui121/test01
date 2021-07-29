@@ -1,0 +1,106 @@
+#f-second{
+ 
+  background-color: #343a40;
+  padding: 0px 30px;
+
+  @include MidTab{
+    padding: 50px 30px;
+  }
+  
+
+  .fs-inner{
+      max-width: 1150px;
+      margin: 0 auto;
+      width: 100%;
+
+      .fsec{
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include MidTab{
+          display: none;
+        }
+
+        h3{
+          color: $white;
+        }
+
+        span{
+          color: white;
+          transform: rotate(90deg);
+          font-weight: bold;
+          transition: 0.5s ease;
+
+          &.-open{
+            transform: rotate(270deg);
+          }
+        }
+
+      }
+
+      
+   
+    .fsec-item{
+      display: none;
+      @include MidTab{
+        display: block;
+      }
+
+      &.-open{
+        display: block;
+      }
+
+      ul{
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+  
+        li{
+          list-style: none;
+          display: block;
+          margin-bottom: 10px;
+          width: 100%;
+  
+          @include MidTab{
+            width: inherit;
+          }
+          
+          & +li{
+  
+            @include MidTab{
+              margin-left: 15px;
+            }
+  
+          }
+  
+          a{
+            color: $white;
+            text-decoration: none;
+            border: 2px solid #fff;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 30px;
+            display: block;
+            // width: 100%;
+
+
+            &:hover{
+              background-color: #fff;
+              color: black;
+            }
+  
+          }//a
+        }//li
+      }//ul
+    }
+    
+    
+  }//inner
+}//section

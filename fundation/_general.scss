@@ -1,0 +1,94 @@
+$orange:#FCC800;
+$white:#fff;
+$black:#000;
+$red:#dc3545;
+$blue:#007bff;
+
+a{
+  text-decoration: none;
+  color:$black;
+
+}
+
+@mixin SmartTab {
+  @media screen and(min-width:480px){
+    @content; 
+  }
+}
+
+
+@mixin SmallTab {
+  @media screen and(min-width:600px){
+    @content; 
+  }
+}
+
+@mixin MidTab {
+  @media screen and(min-width:800px){
+    @content; 
+  }
+}
+
+@mixin OverTab {
+  @media screen and(min-width:1000px){
+    @content; 
+  }
+}
+@mixin KeyTab {
+  @media screen and(min-width:1200px){
+    @content; 
+  }
+}
+
+
+@mixin SoverTab {
+  @media screen and(min-width:1500px){
+    @content; 
+  }
+}
+@mixin SSoverTab {
+  @media screen and(min-width:1540px){
+    @content; 
+  }
+}
+@mixin SPoverTab {
+  @media screen and(min-width:1700px){
+    @content; 
+  }
+}
+@mixin SSPoverTab {
+  @media screen and(min-width:2150px){
+    @content; 
+  }
+}
+@mixin MaxTab {
+  @media screen and(min-width:2450px){
+    @content; 
+  }
+}
+
+
+
+#page-icon {
+  position: fixed;
+  bottom:100px;
+  right: 0px;
+  z-index: 1000;
+
+  a{
+    color: $black;
+    display:inline-block;
+    padding: 15px;
+    background-color: rgba($color: white, $alpha: 0.7);
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  
+}
+
+

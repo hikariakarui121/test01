@@ -1,0 +1,258 @@
+@import './general';
+
+.body{
+  width: 100%;   
+}
+
+
+main{
+  width: 100%;
+  
+  @include OverTab{
+    padding-top: 0px;
+    padding-left:225px;
+    box-sizing: border-box;
+
+  }
+  
+  #top{
+
+
+    .top-visual{
+ 
+   
+      .topv-image{
+
+        img.sp{
+          display: block;
+          width: 100%;
+          height: 330px;
+          object-fit:cover ;
+          object-position: center;
+
+          @media screen and (min-width: 562px) {
+            height: 450px;
+          }
+
+          @media screen and (min-width: 760px) {
+            height: 590px;
+          }
+
+          @include KeyTab{
+            display: none;
+          }
+        }
+
+        img.pc{
+          display: none;
+          width: 100%;
+          height: 660px;
+          object-fit:cover ;
+          object-position: center;
+
+          @include KeyTab{
+            display: block;
+          }
+
+          @include SoverTab{
+
+            height: 780px;
+          }
+
+          @include SPoverTab{
+            height: 1000px;
+          }
+          @include SSPoverTab{
+            height: 1280px;
+          }
+        }
+      }
+    }//top.visual
+    
+
+    .key-visual.fi{
+      display: none;
+      
+      @include SoverTab{  
+        display: block; 
+        position: absolute;
+        top:200px;
+        left:calc(50% + 370px);
+        background-color: #FCC800;
+        padding: 0 15px;
+        padding-bottom: 20px;
+       }
+
+       @include SPoverTab{
+        top:250px;
+        left:calc(50% + 450px);
+        padding: 0 20px;
+        padding-bottom: 25px;
+       }
+
+       @include SSPoverTab{
+        top:320px;
+        left:calc(50% + 550px);
+        padding: 0 30px;
+        padding-bottom: 35px;
+       }
+      
+
+      .key-item{
+        text-align: center;
+        
+        &.tops{
+          position: relative;
+        }
+        &.secs{
+          position: relative;
+        }
+  
+  
+        h2{
+          position: absolute;
+          left:50%;
+          border: 2px solid $black;
+          width: 220px;
+          padding:16px 0px;
+          position: relative;
+          transform: translate(-50%, 50%);
+          background-color: $white;
+          z-index: 100;
+          font-size:16px;
+          white-space: nowrap;
+
+          @include SPoverTab{
+            font-size:18px;
+          }
+
+          
+          @include SSPoverTab{
+            font-size:22px;
+            width: 300px;
+          }
+        }
+  
+        p{
+          border: 2px solid $black;
+          padding: 10px;
+          padding-top: 30px;
+          line-height: 2.0em;
+          font-size: 18px;
+          white-space: nowrap;
+          margin-bottom: 15px;
+          background-color: $white;
+
+          @include SPoverTab{
+            font-size:20px;
+          }
+          @include SSPoverTab{
+            font-size:24px;
+          }
+          
+        }//p
+  
+      }//keyitem
+    }//keyvisual
+
+
+    
+
+    .swiper-container.slider1 {
+      position: absolute;
+      top: 115px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-sizing: border-box;
+      overflow: hidden!important;
+      display: block;
+      //ここの高さはページネーションの位置調整のため 
+      padding-bottom: 30px;
+      width: 335px;
+
+      @media screen and (min-width: 562px) {
+        top: 125px;
+        width: 460px;
+        padding-bottom: 35px;
+      }
+      @media screen and (min-width: 760px) {
+        top: 145px;
+        width: 600px;
+      }
+      @include OverTab{
+        top: 65px;
+        width: 600px;
+        left:calc(50% + 110px);
+      }
+      @include KeyTab{
+        top: 160px;
+        width: 515px;
+        left:calc(50% + 45px);
+      }
+      @include SoverTab{
+        top: 195px;
+        width: 600px;
+        left:calc(50% + 30px);
+        padding-bottom: 40px;
+      }
+      @include SPoverTab{
+        top: 195px;
+        width: 600px;
+        left:calc(50% + 30px);
+        padding-bottom: 40px;
+      }
+      @include SPoverTab{
+        top: 245px;
+        width: 780px;
+        left:calc(50% + 10px);
+        padding-bottom: 40px;
+      }
+      
+      @include SSPoverTab{
+        top: 285px;
+        width: 900px;
+        left:calc(50% - 5px);
+        padding-bottom: 40px;
+      }
+  
+      
+      @include SSPoverTab{
+        top: 315px;
+        width: 1000px;
+        left:calc(50% - 20px);
+        padding-bottom: 40px;
+      }
+  
+  
+    
+    
+    
+     .swiper-slide>img{
+        // border-bottom-right-radius: 20px;
+        // border-top-left-radius: 20px;
+        width: 100%;
+
+      }
+
+      .swiper-pagination-bullet {
+        background:$white; 
+        //デフォルトでかなり低い値
+        opacity: 0.9;
+        
+        & +.swiper-pagination-bullet {
+          margin-left: 1.3rem;
+        }
+        
+       
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #ffd700; /* 色：黄色 */
+      }
+    }//.swiper-container, .slider2 
+
+
+  
+ 
+  }// top
+}//main
