@@ -1,0 +1,71 @@
+ // 6番目
+ #sns{
+  width:100%;
+  background-color: #FCC800;
+
+  
+  .s-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 20px;
+
+    
+    @include MidTab{
+      padding :70px 10px 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      // justify-content: center;
+      margin: 0 auto;
+      max-width:1560px;
+      width:100%;
+      
+
+    }
+
+
+    .s-facebook{
+      width: 100%;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+
+      
+      ._2p3a{
+        margin:0 auto!important;
+      }
+
+      @include MidTab{
+        margin-right: 20px;
+        padding-bottom: 0px;
+        width: 45%;
+      }
+    }
+
+    .s-twitter{
+      // overflow-x: hidden ;
+      width: 100%;
+
+      @include MidTab{
+        width: 45%;
+      }
+    
+
+
+      &>div{
+        margin: 0px!important;
+      }
+
+    }
+  
+    
+  }
+
+  #app{
+    text-align: center;
+  }
+
+}
