@@ -1200,10 +1200,6 @@ a {
   padding-bottom: 30px;
 }
 
-#sns .s-inner .s-twitter {
-  overflow-x: hidden;
-}
-
 #sns .s-inner .s-twitter > div {
   margin: 0px !important;
 }
